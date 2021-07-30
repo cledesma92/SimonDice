@@ -48,7 +48,7 @@ body {
   height: 300px;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 5px;
   position: relative;
 }
 
@@ -111,7 +111,7 @@ body {
 
 .btnStart {
   height: min-content;
-  width: max-content;
+  width: min-content;
   position: absolute;
   top: 0;
   left: 0;
