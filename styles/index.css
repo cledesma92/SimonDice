@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  /* outline: solid 1px red; */
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--oscuro);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --color1: #ffcd33ff;
+  --color2: #4596e6ff;
+  --color3: #d94158ff;
+  --color4: #25b987ff;
+  --color1claro: rgb(255, 216, 97);
+  --color2claro: rgb(101, 165, 230);
+  --color3claro: rgb(216, 102, 119);
+  --color4claro: rgb(68, 185, 146);
+  --oscuro: #42516dff;
+  --gris: #d1d7e3ff;
+  --boton: #8c98b0ff;
+  --transparente: rgba(255, 255, 255, 0);
+  --sombra: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  --sombra-color1: 0px 5px 20px 0px rgba(255, 216, 97, 0.8);
+  --sombra-color2: 0px 5px 20px 0px rgba(101, 165, 230, 0.8);
+  --sombra-color3: 0px 5px 20px 0px rgba(216, 102, 119, 0.8);
+  --sombra-color4: 0px 5px 20px 0px rgba(68, 185, 146, 0.8);
+}
+
+.hide {
+  display: none;
+}
+
+.gameboard {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.color {
+  width: 100%;
+  height: 100%;
+}
+
+.uno {
+  background-color: var(--color1);
+  border-radius: 100% 0 0 0;
+  box-shadow: var(--sombra);
+}
+.dos {
+  background-color: var(--color2);
+  border-radius: 0 100% 0 0;
+  box-shadow: var(--sombra);
+}
+.tres {
+  background-color: var(--color3);
+  border-radius: 0 0 0 100%;
+  box-shadow: var(--sombra);
+}
+.cuatro {
+  background-color: var(--color4);
+  border-radius: 0 0 100% 0;
+  box-shadow: var(--sombra);
+}
+
+.uno.claro {
+  background-color: var(--color1claro);
+  box-shadow: var(--sombra-color1);
+}
+.dos.claro {
+  background-color: var(--color2claro);
+  box-shadow: var(--sombra-color2);
+}
+.tres.claro {
+  background-color: var(--color3claro);
+  box-shadow: var(--sombra-color3);
+}
+.cuatro.claro {
+  background-color: var(--color4claro);
+  box-shadow: var(--sombra-color4);
+}
+
+.adorno {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: var(--gris);
+  box-shadow: var(--sombra);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.btnStart {
+  height: min-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 5em;
+  padding: 30px;
+  border: none;
+  border-radius: 30px;
+  color: var(--oscuro);
+  transition: color 0.5s;
+}
+
+.btnStart:hover {
+  color: var(--boton);
+  transition: background-color 1s, color 1s;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width, shrink-to-fit=no">
+        <meta name="description" content="Proyecto del curso de fundamentos de JavaScript de Platzi, poniendo en practica todo lo que se vió a lo largo del curso creando un juego.">
+        <title>Simon Dice</title>
+        <!-- NORMALIZE CSS -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="styles/index.css">
+        <!-- FAV ICON -->
+        <link rel="icon" href="images/simon_says.svg" type="image/png">
+        
+    </head>
+    <body>
+        <div class="gameboard">
+            <div id="color1" class="color uno left" data-color="color1"></div>
+            <div id="color2" class="color dos right" data-color="color2"></div>
+            <div id="color3" class="color tres left" data-color="color3"></div>
+            <div id="color4" class="color cuatro right" data-color="color4"></div>
+            <div class="adorno"></div>
+            <button id="btnEmpezar" class="btnStart" onclick="empezarJuego()">Empezar a juegar!</button>
+        </div>
+    </body>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="scripts/index.js"></script>
+</html>
