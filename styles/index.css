@@ -111,7 +111,7 @@ body {
 
 .btnStart {
   height: min-content;
-  width: min-content;
+  width: max-content;
   position: absolute;
   top: 0;
   left: 0;
