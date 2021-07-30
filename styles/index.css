@@ -49,6 +49,7 @@ body {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   grid-gap: 10px;
+  position: relative;
 }
 
 .color {
