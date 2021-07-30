@@ -142,3 +142,7 @@ class Juego {
 
     
 }
+
+function empezarJuego() {
+    let juego = new Juego()
+}
